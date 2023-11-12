@@ -37,14 +37,19 @@ const lookup = {
         let charCode = encodedStr.charCodeAt(i);
         if(charCode >= 65 && charCode <= 90){
             charCode += 13;
+			if(charCode > 90) charCode= (charCode%90)+64 ;
             decodedArr[i] = String.fromCharCode(charCode);
         }
+		  else{
+			  decodedArr[i] = encodedStr.charAt(i);
+			  
+		  }
       }
       
   
     return decodedArr; 
   }
 
-  console.log(rot13("ASERR YBIR? NPPVBWBO"));
+  // console.log(rot13("SERR YBIR? NPPVBWBO"));
 // Do not change this line
 window.rot13 = rot13;
