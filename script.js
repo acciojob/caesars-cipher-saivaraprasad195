@@ -39,11 +39,10 @@ function rot13(encodedStr) {
 	for(let i=0;i<n;i++){
 		let char = lookup[`${str.charAt(i)}`];
 		if( char != undefined) result +=char;
-		window.alert(char)
 	}
 	
 
-  return; //return decodedArr
+  return result; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
