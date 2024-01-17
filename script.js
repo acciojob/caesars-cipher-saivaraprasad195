@@ -47,7 +47,7 @@
       }
       
   
-    return decodedArr.toString(); 
+    return decodedArr; 
   }
 
   console.log(rot13("SERR YBIR? NPPVBWBO"));
